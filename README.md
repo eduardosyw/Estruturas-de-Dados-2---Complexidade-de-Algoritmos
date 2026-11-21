@@ -1,8 +1,8 @@
 # Complexidade de Algoritmos (Big-O, melhor/médio/pior caso)
 
-Trabalho de **Estruturas de Dados 2** – **Unipê** – **Prof. Edkallenn (Ed)**
+Trabalho de **Estruturas de Dados 2** – **Unipê** – **Prof. Edkallenn**
 
-**Integrantes:** [Nome 1] e [Nome 2]
+**Integrantes:** Eduardo Ramalho Teixeira e Renan de Araújo Venturini Silva
 
 **Vídeo:** [cole aqui o link do YouTube]
 
@@ -49,13 +49,8 @@ javac -encoding UTF-8 -d bin src/*.java
 java -cp bin Main
 ```
 
-Também funciona abrindo a pasta no IntelliJ, VS Code ou NetBeans e rodando a classe `Main`.
+Também funciona abrindo a pasta no IntelliJ ou VS Code e rodando a classe `Main`.
 
-> **Acentos estranhos no terminal do Windows?** Use o terminal integrado da IDE, ou rode:
-> ```
-> chcp 65001
-> java -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -cp bin Main
-> ```
 
 ## Experimentos do menu
 
