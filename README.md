@@ -87,14 +87,6 @@ PASSOS (operações contadas) - pior caso: o valor procurado NÃO existe
   100.000 |     1 |       17 |   100.000 |    4.999.950.000
 1.000.000 |     1 |       20 | 1.000.000 |  499.999.500.000 *
 ```
-
-## Conceitos principais
-
-- **Big-O (O)**: limite superior do crescimento. "No máximo cresce assim".
-- **Ω (Ômega)**: limite inferior. **Θ (Theta)**: limite justo (superior e inferior ao mesmo tempo).
-- **Melhor/médio/pior caso** são *situações de entrada*; Big-O é *notação*. Dá para falar "o pior caso do Insertion Sort é O(n²)" e "o melhor caso é O(n)".
-- Ignoramos constantes e termos menores: `3n² + 5n + 2` → **O(n²)**.
-- Para n pequeno, as constantes podem pesar mais que o crescimento (no experimento 4, com 40 alunos, a versão O(n²) pode ser mais rápida).
 - O HashSet troca **memória** por **tempo**: é mais rápido, mas guarda uma cópia dos valores.
 
 - CORMEN, T. H. et al. *Algoritmos: Teoria e Prática*. Capítulos 2 e 3.
