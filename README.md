@@ -1,10 +1,10 @@
-# Complexidade de Algoritmos (Big-O, melhor/médio/pior caso)
+# Complexidade de Algoritmos na prática (Big-O, melhor/médio/pior caso)
 
-Trabalho de **Estruturas de Dados 2** – **Unipê** – **Prof. Edkallenn**
+Trabalho de **Estruturas de Dados 2** – **Unipê** – **Prof. Edkallenn (Ed)**
 
 **Integrantes:** Eduardo Ramalho Teixeira e Renan de Araújo Venturini Silva
 
-**Vídeo:** [cole aqui o link do YouTube]
+**Vídeo:** https://www.youtube.com/watch?v=Guz8dkm_M10
 
 ---
 
@@ -31,6 +31,8 @@ ed2-complexidade-algoritmos/
 └── src/
     ├── Algoritmos.java   ← os algoritmos, comentados, com contador de passos
     └── Main.java         ← menu com os 4 experimentos do vídeo
+online/
+    └── Main.java         ← os dois arquivos juntos, para compilador online
 ```
 
 ## Como compilar e executar
@@ -49,8 +51,21 @@ javac -encoding UTF-8 -d bin src/*.java
 java -cp bin Main
 ```
 
-Também funciona abrindo a pasta no IntelliJ ou VS Code e rodando a classe `Main`.
+Também funciona abrindo a pasta no IntelliJ, VS Code ou NetBeans e rodando a classe `Main`.
 
+### Sem IDE: compilador online
+
+A pasta `online/` tem o mesmo programa em **um arquivo só** (`online/Main.java`). **É esta versão que aparece rodando no vídeo**, no compilador online OnlineGDB. O código é idêntico ao de `src/`, só que com as duas classes juntas no mesmo arquivo.
+
+1. Abra [onlinegdb.com](https://www.onlinegdb.com) e escolha a linguagem **Java**.
+2. Apague o código de exemplo e cole todo o conteúdo de `online/Main.java`.
+3. Clique em **Run** e use o menu no console.
+
+> **Acentos estranhos no terminal do Windows?** Use o terminal integrado da IDE, ou rode:
+> ```
+> chcp 65001
+> java -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -cp bin Main
+> ```
 
 ## Experimentos do menu
 
@@ -81,3 +96,6 @@ PASSOS (operações contadas) - pior caso: o valor procurado NÃO existe
 - Ignoramos constantes e termos menores: `3n² + 5n + 2` → **O(n²)**.
 - Para n pequeno, as constantes podem pesar mais que o crescimento (no experimento 4, com 40 alunos, a versão O(n²) pode ser mais rápida).
 - O HashSet troca **memória** por **tempo**: é mais rápido, mas guarda uma cópia dos valores.
+
+- CORMEN, T. H. et al. *Algoritmos: Teoria e Prática*. Capítulos 2 e 3.
+- VisuAlgo: https://visualgo.net
